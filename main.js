@@ -4,7 +4,6 @@
     const empezarBoton = document.getElementById("empezarBtn");
     const siguienteBoton = document.getElementById("siguienteBtn");
     const preguntaContenedor = document.getElementById("preguntaContainer");
-    //const preguntaElement = document.getElementById("pregunta");
     const respuestaBotonElement = document.getElementById("respuestaBoton")
     const question = document.getElementById("questions")
     const mensajeFinal = document.getElementById("mensajeFinal")
@@ -76,11 +75,7 @@
         
     }
 
-    // reintentarBoton.addEventListener("click",()=>{
-    //     bucle10 = 0 
-    //     pintarPreguntas()
-    // })
-
+   
 
 
 
