@@ -4,38 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProyerctoJS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" id="inicioNav" aria-current="page">Inicio</a>
-                <a class="nav-link" id="preguntasNav">Preguntas</a>
-                <a class="nav-link"  id="resultadoNav">Resultado</a>
-            </div>
-        </div>
-    </div>
-</nav> -->
-<div id="preguntaContainer" class="hide">
-    <div id="questions">Pregunta</div>
     
-    <div id="respuestaBoton"></div>
-</div>
+    <div class="h3 m-2">Responde las Preguntas!</div>  
+   
+    <div id="preguntaContainer" class="hide">
+    <div class="h5 mt-2 m-2" id="questions">Pregunta</div>
+    
+    <div class="h6 mt-2 m-2" id="respuestaBoton"></div>
+    </div>
+
 <div class="controles">
-    <button id="empezarBtn">Empezar</button>
-    <button id="siguienteBtn" class="hide">Siguiente</button>
-<di id="mensajeFinal">
+    <button class="btn btn-dark m-2" id="empezarBtn">Empezar</button>
+    <button class="btn btn-dark hide mt-2 m-2" id="siguienteBtn">Siguiente</button>
+    <button id="volverEmpezarBtn" class="hide">Reintentar</button>
+<div id="mensajeFinal">
     <p class="hide">Has completado la trivia</p>
-    <button id="volerEmpezarBtn" class="hide">Reintentar</button>
-</div>
+</div> 
+
 
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
 </html>
+
+

@@ -75,9 +75,7 @@
         
     }
 
-   
-
-
-
+    
     empezarBoton.addEventListener("click", empezarJuego);
     siguienteBoton.addEventListener("click",()=>pintarPreguntas(preguntas));
+    reintentarBoton.addEventListener("click",()=> reintentar(preguntas));
