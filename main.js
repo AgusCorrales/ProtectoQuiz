@@ -64,7 +64,6 @@ const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
     if(respuestaseleccionada === correcta){
         respuestaseleccionada.classList.add("green")
         respuestasCorrectas ++ 
-        console.log(respuestasCorrectas);
         respuestaBotonElement.classList.add("disable")
     }else{
         respuestaseleccionada.classList.add("red")
@@ -75,6 +74,7 @@ const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
 
 
 function empezarJuego() {
+    mensajeInicial.classList.remove("hide")
     mensajeFinal.classList.add("hide")
     empezarBoton.classList.add("hide");
     preguntaIndex = 0;
