@@ -59,14 +59,16 @@ const pintarPreguntas = ((preguntas)=>{
 });
 
 const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
-    
+
     if(respuestaseleccionada === correcta){
         respuestaseleccionada.classList.add("green")
         respuestasCorrectas ++ 
         respuestaBotonElement.classList.add("disable")
+        siguienteBoton.classList.remove("disable")
     }else{
         respuestaseleccionada.classList.add("red")
         respuestaBotonElement.classList.add("disable")
+        siguienteBoton.classList.remove("disable")
         
     }
 })
