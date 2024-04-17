@@ -1,6 +1,4 @@
 const mensajeInicial = document.getElementById("mensajeInicial")
-const preguntasNavegador = document.getElementById("preguntasNav");
-const resultadosNavegador = document.getElementById("resultadoNav");
 const empezarBoton = document.getElementById("empezarBtn");
 const siguienteBoton = document.getElementById("siguienteBtn");
 const preguntaContenedor = document.getElementById("preguntaContainer");
@@ -35,6 +33,7 @@ const pintarPreguntas = ((preguntas)=>{
     const button = document.createElement("button")
     button.innerHTML = preguntas[bucle10].correct_answer;
     respuestaBotonElement.appendChild(button)
+
 
     preguntas[bucle10].incorrect_answers.forEach(element => {
         const buttonIncorrectos = document.createElement("button")
@@ -72,7 +71,6 @@ const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
     }
 })
 
-
 function empezarJuego() {
     mensajeInicial.classList.remove("hide")
     mensajeFinal.classList.add("hide")
@@ -90,7 +88,6 @@ function llamarALaPregunta() {
     
 }
 
-
 const reintentarJuego = ()=>{
     reintentarBoton.classList.add("hide");
     preguntaIndex = 0;
@@ -99,9 +96,6 @@ const reintentarJuego = ()=>{
     llamarALaPregunta()
     
 }
-
-
-
 
 
 
