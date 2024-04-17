@@ -15,8 +15,11 @@ body{
     pointer-events: none;
 }
 button{
+    
+    background-color: white;
     margin-right: 5px;
-    transition: 0.3s ease;
+    margin-top: 5px;
+    transition: 0.3s;
 
 }
 

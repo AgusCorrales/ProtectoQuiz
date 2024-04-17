@@ -25,10 +25,11 @@ console.log(preguntas);
 
 const pintarPreguntas = ((preguntas)=>{
     if(bucle10 < 10){
-    respuestaBotonElement.classList.remove("disable")
-    respuestaBotonElement.innerHTML = ""
-    console.log(preguntas[bucle10].question)
-    question.innerHTML = preguntas[bucle10].question;
+        siguienteBoton.classList.add("disable")
+        respuestaBotonElement.classList.remove("disable")
+        respuestaBotonElement.innerHTML = ""
+        console.log(preguntas[bucle10].question)
+        question.innerHTML = preguntas[bucle10].question;
 
     const button = document.createElement("button")
     button.innerHTML = preguntas[bucle10].correct_answer;
@@ -59,7 +60,7 @@ const pintarPreguntas = ((preguntas)=>{
 });
 
 const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
-
+    //siguienteBoton.classList.add("disable")
     if(respuestaseleccionada === correcta){
         respuestaseleccionada.classList.add("green")
         respuestasCorrectas ++ 
