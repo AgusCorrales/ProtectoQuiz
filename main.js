@@ -241,5 +241,3 @@ const reproducirAudioFestejo = () =>{
 
 empezarBoton.addEventListener("click", empezarJuego);
 siguienteBoton.addEventListener("click",()=>pintarPreguntas(preguntas));
-
-
