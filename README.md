@@ -39,7 +39,12 @@ Este es un juego de trivia interactivo que utiliza la API de Open Trivia Databas
 ## Dependencias
 
 - Axios: Utilizado para realizar solicitudes HTTP a la API de Open Trivia Database.
+  
 
+## Imágenes
+<img width="1504" alt="Captura de pantalla 2024-04-18 a la(s) 15 13 34" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/7c30af60-98da-420c-bb7c-f250696548b7">
+<img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 16 44" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/a06b6fd9-4100-4fe5-be4d-7376f2f7693c">
+<img width="1504" alt="Captura de pantalla 2024-04-18 a la(s) 15 18 17" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/6d8ab3d3-826c-408b-931d-65c3f4367f9c">
 
 
 
