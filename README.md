@@ -43,7 +43,7 @@ Este es un juego de trivia interactivo que utiliza la API de Open Trivia Databas
 
 ## Imágenes
 <img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 38 43" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/3f535854-9f76-4b16-b20d-89eb3e8d2ece">
-<img width="1509" alt="Captura de pantalla 2024-04-18 a la(s) 15 39 24" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/b6849cd6-76de-4d6a-8a6e-cbc0e607bc65">
+<img width="1507" alt="Captura de pantalla 2024-04-18 a la(s) 15 48 19" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/e0369be2-b2c5-4e23-9dba-f3ee4042ebab">
 <img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 39 55" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/c663a985-1518-4839-b260-deb606d00791">
 
 
