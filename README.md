@@ -16,7 +16,7 @@ Este es un juego de trivia interactivo que utiliza la API de Open Trivia Databas
 
 - Al abrir la aplicación verás un botón "Empezar". Haz clic en él para comenzar el juego
 
-- Se te presentarán 10 preguntas relacionadas con deportes.
+- Se te presentarán 10 preguntas relacionadas con videojuegos.
 
 - Lee cada pregunta y selecciona la respuesta que creas correcta haciendo click en ella.
 
