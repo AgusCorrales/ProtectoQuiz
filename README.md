@@ -1,6 +1,6 @@
 
 # Trivia Game 🎮
-Este es un juego de trivia interactivo que utiliza la API de Open Trivia Database para obtener preguntas sobre el tema de "Sports".
+Este es un juego de trivia interactivo que utiliza la API de Open Trivia Database para obtener preguntas sobre el tema de "VideoJuegos".
 
 
 
