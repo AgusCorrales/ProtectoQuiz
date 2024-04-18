@@ -42,9 +42,10 @@ Este es un juego de trivia interactivo que utiliza la API de Open Trivia Databas
   
 
 ## Imágenes
-<img width="1504" alt="Captura de pantalla 2024-04-18 a la(s) 15 13 34" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/7c30af60-98da-420c-bb7c-f250696548b7">
-<img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 16 44" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/a06b6fd9-4100-4fe5-be4d-7376f2f7693c">
-<img width="1504" alt="Captura de pantalla 2024-04-18 a la(s) 15 18 17" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/6d8ab3d3-826c-408b-931d-65c3f4367f9c">
+<img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 38 43" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/3f535854-9f76-4b16-b20d-89eb3e8d2ece">
+<img width="1509" alt="Captura de pantalla 2024-04-18 a la(s) 15 39 24" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/b6849cd6-76de-4d6a-8a6e-cbc0e607bc65">
+<img width="1508" alt="Captura de pantalla 2024-04-18 a la(s) 15 39 55" src="https://github.com/AgusCorrales/ProyectoQuiz/assets/162991987/c663a985-1518-4839-b260-deb606d00791">
+
 
 
 
