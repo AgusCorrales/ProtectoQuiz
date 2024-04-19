@@ -145,101 +145,100 @@ let respuestasCorrectas =[]
 
 
 const pintarPreguntas = ((preguntas)=>{
-    if(bucle10 < 10){
-        siguienteBoton.classList.add("disable")
-        respuestaBotonElement.classList.remove("disable")
-        respuestaBotonElement.innerHTML = ""
-        console.log(preguntas);
-        question.innerHTML = preguntas[bucle10].question;
+  if(bucle10 < 10){
+    siguienteBoton.classList.add("disable")
+    respuestaBotonElement.classList.remove("disable")
+    respuestaBotonElement.innerHTML = ""
+    question.innerHTML = preguntas[bucle10].question;
 
-        const button = document.createElement("button")
-        button.innerHTML = preguntas[bucle10].correct_answer;
-        respuestaBotonElement.appendChild(button)
+    const button = document.createElement("button")
+    button.innerHTML = preguntas[bucle10].correct_answer;
+    respuestaBotonElement.appendChild(button)
 
-        preguntas[bucle10].incorrect_answers.forEach(element => {
-        const buttonIncorrectos = document.createElement("button")
-        buttonIncorrectos.textContent = element 
-        respuestaBotonElement.appendChild(buttonIncorrectos)
-        buttonIncorrectos.addEventListener("click", ()=>pintarRespuesta(buttonIncorrectos, button))
+    preguntas[bucle10].incorrect_answers.forEach(element => {
+    const buttonIncorrectos = document.createElement("button")
+    buttonIncorrectos.textContent = element 
+    respuestaBotonElement.appendChild(buttonIncorrectos)
+    buttonIncorrectos.addEventListener("click", ()=>pintarRespuesta(buttonIncorrectos, button))
 
-    });
-        button.addEventListener("click", ()=>pintarRespuesta(button, button))
+});
+    button.addEventListener("click", ()=>pintarRespuesta(button, button))
         
-        bucle10++
-    }else{
-        preguntaContenedor.classList.add("hide"),
-        empezarBoton.innerText= "Reintentar"
-        empezarBoton.classList.remove("hide"),
-        siguienteBoton.classList.add("hide"),
-        mensajeFinal.classList.remove("hide"),
-        mensajeInicial.classList.add("hide"),
-        mensajeFinal.innerHTML = `Tu puntuación es de ${respuestasCorrectas}/10`
-        reproducirAudioNelson()
-        reproducirAudioFestejo()
+    bucle10++
+  }else{
+    preguntaContenedor.classList.add("hide"),
+    empezarBoton.innerText= "Reintentar"
+    empezarBoton.classList.remove("hide"),
+    siguienteBoton.classList.add("hide"),
+    mensajeFinal.classList.remove("hide"),
+    mensajeInicial.classList.add("hide"),
+    mensajeFinal.innerHTML = `Tu puntuación es de ${respuestasCorrectas}/10`
+    reproducirAudioNelson()
+    reproducirAudioFestejo()
         
     
-    }
+  }
     
     
 });
 
 const pintarRespuesta = ((respuestaseleccionada, correcta)=>{
     
-    if(respuestaseleccionada === correcta){
-        respuestaseleccionada.classList.add("green")
-        respuestasCorrectas ++ 
-        respuestaBotonElement.classList.add("disable")
-        siguienteBoton.classList.remove("disable")
-    }else{
-        respuestaseleccionada.classList.add("red")
-        respuestaBotonElement.classList.add("disable")
-        siguienteBoton.classList.remove("disable")
+  if(respuestaseleccionada === correcta){
+    respuestaseleccionada.classList.add("green")
+    respuestasCorrectas ++ 
+    respuestaBotonElement.classList.add("disable")
+    siguienteBoton.classList.remove("disable")
+  }else{
+    respuestaseleccionada.classList.add("red")
+    respuestaBotonElement.classList.add("disable")
+    siguienteBoton.classList.remove("disable")
         
-    }
+  }
 })
 
 function empezarJuego() {
-    usuarioDiv.classList.add("hide");
-    mensajeInicial.classList.remove("hide");
-    mensajeFinal.classList.add("hide")
-    empezarBoton.classList.add("hide");
-    preguntaIndex = 0;
-    bucle10=0;
-    respuestasCorrectas = 0;
-    preguntaContenedor.classList.remove ("hide");
-    siguienteBoton.classList.remove("hide");
-    llamarALaPregunta()
+  usuarioDiv.classList.add("hide");
+  mensajeInicial.classList.remove("hide");
+  mensajeFinal.classList.add("hide")
+  empezarBoton.classList.add("hide");
+  preguntaIndex = 0;
+  bucle10=0;
+  respuestasCorrectas = 0;
+  preguntaContenedor.classList.remove ("hide");
+  siguienteBoton.classList.remove("hide");
+  llamarALaPregunta()
     
 }
 
 function llamarALaPregunta() {
-    pintarPreguntas(preguntas)
+  pintarPreguntas(preguntas)
     
 }
 
 const reintentarJuego = ()=>{
-    reintentarBoton.classList.add("hide");
-    preguntaIndex = 0;
-    preguntaContenedor.classList.remove("hide");
-    siguienteBoton.classList.remove("hide");
-    llamarALaPregunta()
+  reintentarBoton.classList.add("hide");
+  preguntaIndex = 0;
+  preguntaContenedor.classList.remove("hide");
+  siguienteBoton.classList.remove("hide");
+  llamarALaPregunta()
     
 }
 
 const reproducirAudioNelson = () =>{
-    if (respuestasCorrectas < 5){
-        audioNelson.play()
-    }
+  if (respuestasCorrectas < 5){
+    audioNelson.play()
+  }
 }
 
 const reproducirAudioFestejo = () =>{
-    if(respuestasCorrectas == 10){
-        audioFestejo.play()
-    }
+  if(respuestasCorrectas == 10){
+    audioFestejo.play()
+  }
 }
 
 
 empezarBoton.addEventListener("click", empezarJuego);
 siguienteBoton.addEventListener("click",()=>pintarPreguntas(preguntas));
-//reintentarBoton.addEventListener("click", reintentarJuego()) 
+
 
